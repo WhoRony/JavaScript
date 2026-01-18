@@ -6,5 +6,4 @@ button.addEventListener("click", function(){
     let g = Math.floor(Math.random()*256)    
     let b = Math.floor(Math.random()*256)
     box.style.backgroundColor = `rgb(${r},${g},${b})`
-    
 })
