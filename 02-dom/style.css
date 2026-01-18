@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    border-radius: 30px;
+}
+
+button{
+    padding: 12px 22px;
+    border-radius: 12px;
+    background-color: crimson;
+    border: none;
+    font-weight: 600;
+    color: white;
+}
+
+button:active{
+    scale: 0.9;
+}
