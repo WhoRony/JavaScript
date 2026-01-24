@@ -2,30 +2,38 @@ const btn = document.querySelector("button")
 const input = document.querySelector("input")
 const body = document.querySelector("body")
 
-btn.addEventListener("click",function(){
-    //caught the input 
-    const inputvalue = input.value
-    if(inputvalue === "") return
-    console.log(inputvalue);
+input.addEventListener("keydown", function (event) {
+    if(event.key === "Enter"){
+    event.preventDefault()
 
+    const inputvalue = input.value.trim()
+    if (inputvalue === "") return
 
-    
-    //picked up my pase in making the new element
-    const newElement = document.createElement("div")
-    const delbtn = document.createElement("button")
-    newElement.innerHTML = inputvalue
-    delbtn.innerHTML= "delete"
-    
-    //used appendchild to appned that to my body
-    body.appendChild(newElement)
-    body.appendChild(delbtn)
-    
-    delbtn.addEventListener("click", function(){
-        newElement.remove()
-        delbtn.remove()
+    const wrapper = document.createElement("div")
+
+    const text = document.createElement("span")
+    text.textContent = inputvalue
+
+    const delbtn = document.createElement("button")``
+    delbtn.textContent = "Delete"
+
+    const updatebtn = document.createElement("button")
+    updatebtn.textContent = "Update"
+
+    delbtn.addEventListener("click", function () {
+        wrapper.remove()
     })
-    
-    input.value = " "
+
+    updatebtn.addEventListener("click", function () {
+        input.value = text.textContent
+        wrapper.remove()
+    })
+
+    wrapper.append(text, delbtn, updatebtn)
+    body.appendChild(wrapper)
+
+    input.value = ""
+    }
 })
 
-    
+
