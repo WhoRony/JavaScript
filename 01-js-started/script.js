@@ -93,3 +93,37 @@
 
 // console.log(newarr);
 
+// let arr = [1,2,"sdad",3,4,5,"sda"]
+
+// let string = arr.join(",")
+// console.log(string);
+
+// let arr = [1,[2,3] ,["a","s","mkl"] ,4]
+
+// console.log(arr.flat());
+
+
+// let arr = [1,2,3,4,5,"asd",3]
+
+// function check(arry){
+//     let hasString = arry.some(elemnt => typeof elemnt === "string");
+
+//     return hasString ? "There is a string" : "All are numbers"
+// }
+
+// console.log(check(arr));
+
+function checkprime(number){
+    if(number <= 1 )   return "Not Prime";
+    
+    if(number === 2 ) return "Prime Number"
+    for (let i =2 ; i <= Math.sqrt(number);i++){
+        if (number % i ===0){
+            return "Not Prime"
+        }
+    }
+    return  "Prime number"
+}
+
+let ans = checkprime(4)
+console.log(ans);
