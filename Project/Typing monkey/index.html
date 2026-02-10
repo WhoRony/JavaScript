@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Typing Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Typing Test 🐒</h1>
+
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+
+    <p id="text"></p>
+
+    <p class="extra">
+      Mistakes: <b id="mistakes">0</b> |
+      Characters: <b id="chars">0</b>
+    </p>
+
+    <textarea id="input" placeholder="Start typing here..." disabled></textarea>
+
+    <div class="stats">
+      <span>Time: <b id="time">60</b>s</span>
+      <span>WPM: <b id="wpm">0</b></span>
+      <span>Accuracy: <b id="accuracy">0</b>%</span>
+    </div>
+
+    <button id="restart">Restart</button>
+  </div>
+
+  <audio id="keySound" src="https://assets.mixkit.co/sfx/preview/mixkit-typewriter-soft-click-1125.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
