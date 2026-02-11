@@ -20,15 +20,7 @@ subButton.addEventListener("click",()=>{
     compButton.innerHTML = "Done"
     todoCollector.appendChild(compButton)    
     taskCounter.innerHTML = tasklist.length
-    
-    // compButton.addEventListener("click",()=>{
-        //     compButton = false
-        //     if(compButton != false) {
-            //     }else{
-                //         compButton.innerHTML = "Undo"
-                
-                //     }
-                // })
+
     compButton.addEventListener("click",()=>{
         newTodo.style.textDecoration = 'line-through'
         if(compButton.innerHTML == "Done"){
