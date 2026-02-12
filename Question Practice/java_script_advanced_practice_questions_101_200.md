@@ -9,6 +9,7 @@ These questions are ideal for:
 
 ---
 
+
 ## 1. Intermediate Console and Variables (10 Questions)
 1. Create a program that calculates and logs the result of `(5 + 3) * 2 - 8 / 4`.
 2. Log the value of a variable before and after incrementing it using `++`.
