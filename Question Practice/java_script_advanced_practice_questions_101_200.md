@@ -1,5 +1,6 @@
 # JavaScript Advanced Practice Questions (101–200)
 
+
 This document contains **100 intermediate-to-advanced JavaScript questions** focused on **problem‑solving, modern JS features, DOM manipulation, algorithms, and real‑world use cases**.
 
 These questions are ideal for:
