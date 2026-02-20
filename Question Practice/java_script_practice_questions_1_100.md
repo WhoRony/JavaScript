@@ -1,5 +1,5 @@
 # JavaScript Practice Questions (1–100)
-
+Todo
 This document contains **100 JavaScript practice questions**, divided into clear topics with **increasing difficulty**. It’s perfect for **daily practice, interview prep, and logic building**.
 
 ---
